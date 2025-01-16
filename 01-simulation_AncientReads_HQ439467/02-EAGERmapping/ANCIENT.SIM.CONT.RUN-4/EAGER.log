@@ -1,0 +1,488 @@
+# EAGER Version used for this run: 1.92.56
+################
+#CreateResultsDirectories at 2024-07-03T07:02:45.773 was executed with the following commandline:
+mkdir -p /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/0-FastQC/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/1-AdapClip/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/6-QualiMap/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/7-DnaDamage/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/10-GATKGenotyper/.tmp 
+################
+## Runtime of Module was: 0 seconds.
+################
+#FastQCdefault at 2024-07-03T07:02:45.785 was executed with the following commandline:
+fastqc -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/0-FastQC --extract  -f fastq /data/simulation_AncientReads_HQ439467/01-gargammel/ANCIENT.SIM.CONT.RUN-4_s.fq.gz 
+################
+#perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "de_DE:en",
+	LC_ALL = "C.UTF-8",
+	LC_MEASUREMENT = "de_DE.UTF-8",
+	LC_TELEPHONE = "de_DE.UTF-8",
+	LC_TIME = "de_DE.UTF-8",
+	LC_PAPER = "de_DE.UTF-8",
+	LC_ADDRESS = "de_DE.UTF-8",
+	LC_IDENTIFICATION = "de_DE.UTF-8",
+	LC_MONETARY = "de_DE.UTF-8",
+	LC_NAME = "de_DE.UTF-8",
+	LC_NUMERIC = "de_DE.UTF-8",
+	LANG = "de_DE.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Picked up JAVA_TOOL_OPTIONS: -Djava.io.tmpdir=/data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/0-FastQC/.tmp
+Picked up _JAVA_OPTIONS: -Dsun.java2d.xrender=false -Xmx256G -Xms8G
+Skipping '' which didn't exist, or couldn't be read
+Started analysis of ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 5% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 10% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Too many tiles (>500) so giving up trying to do per-tile qualities since we're probably parsing the file wrongly
+Approx 15% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 20% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 25% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 30% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 35% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 40% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 45% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 50% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 55% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 60% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 65% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 70% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 75% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 80% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 85% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 90% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+Approx 95% complete for ANCIENT.SIM.CONT.RUN-4_s.fq.gz
+# Runtime of Module was: 3 seconds.
+################
+#AdapterRemovalsingleendedonly at 2024-07-03T07:02:49.526 was executed with the following commandline:
+AdapterRemoval --file1 /data/simulation_AncientReads_HQ439467/01-gargammel/ANCIENT.SIM.CONT.RUN-4_s.fq.gz --basename /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/1-AdapClip/ANCIENT.SIM.CONT.RUN-4_s.fq --gzip --threads 4 --trimns --trimqualities --adapter1 AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC --adapter2 AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA --minlength 30 --minquality 20 --minadapteroverlap 1 
+################
+#Trimming single ended reads ...
+Opening FASTQ file '/data/simulation_AncientReads_HQ439467/01-gargammel/ANCIENT.SIM.CONT.RUN-4_s.fq.gz'
+
+Processed a total of 39,713 reads in 1.0s; 41,000 reads per second on average ...
+# Runtime of Module was: 0 seconds.
+################
+#TrackFastQ at 2024-07-03T07:02:50.5 was executed with the following commandline:
+/bin/sh -c echo 'all' > /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/1-AdapClip//track_fastq.log 
+################
+#/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+# Runtime of Module was: 0 seconds.
+# EAGER Version used for this run: 1.92.56
+################
+#CircularMapperGenerator at 2024-07-03T07:02:50.511 was executed with the following commandline:
+circulargenerator -e 500 -i /data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna -s NC_001640.1 
+################
+## The Module CircularMapperGenerator has already been run! (i.e the command above was NOT executed)################
+#BWAAlign at 2024-07-03T07:02:50.512 was executed with the following commandline:
+bwa aln -t 4 /data/references/NC_001640_Equus-callabus_mt/NC_001640.1_500.fna /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/1-AdapClip/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.gz -n 0.01 -l 16500  -f /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT.sai 
+################
+#[bwa_aln] 17bp reads: max_diff = 2
+[bwa_aln] 22bp reads: max_diff = 3
+[bwa_aln] 42bp reads: max_diff = 4
+[bwa_aln] 64bp reads: max_diff = 5
+[bwa_aln] 90bp reads: max_diff = 6
+[bwa_aln] 117bp reads: max_diff = 7
+[bwa_aln] 146bp reads: max_diff = 8
+[bwa_aln] 176bp reads: max_diff = 9
+[bwa_aln] 207bp reads: max_diff = 10
+[bwa_aln] 239bp reads: max_diff = 11
+[bwa_aln_core] calculate SA coordinate... 0.78 sec
+[bwa_aln_core] write to the disk... 0.00 sec
+[bwa_aln_core] 39350 sequences have been processed.
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa aln -t 4 -n 0.01 -l 16500 -f /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT.sai /data/references/NC_001640_Equus-callabus_mt/NC_001640.1_500.fna /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/1-AdapClip/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.gz 
+[main] Real time: 0.404 sec; CPU: 0.830 sec
+# Runtime of Module was: 0 seconds.
+################
+#BWASamse at 2024-07-03T07:02:50.924 was executed with the following commandline:
+bwa samse -r @RG\tID:ILLUMINA-ANCIENT.SIM.CONT.RUN-4_s.fq\tSM:ANCIENT.SIM.CONT.RUN-4_s.fq\tPL:illumina /data/references/NC_001640_Equus-callabus_mt/NC_001640.1_500.fna /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT.sai /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/1-AdapClip/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.gz -f /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT.sam 
+################
+#[bwa_aln_core] convert to sequence coordinate... 0.03 sec
+[bwa_aln_core] refine gapped alignments... 0.01 sec
+[bwa_aln_core] print alignments... 0.03 sec
+[bwa_aln_core] 39350 sequences have been processed.
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa samse -r @RG\tID:ILLUMINA-ANCIENT.SIM.CONT.RUN-4_s.fq\tSM:ANCIENT.SIM.CONT.RUN-4_s.fq\tPL:illumina -f /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT.sam /data/references/NC_001640_Equus-callabus_mt/NC_001640.1_500.fna /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT.sai /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/1-AdapClip/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.gz
+[main] Real time: 0.353 sec; CPU: 0.113 sec
+# Runtime of Module was: 0 seconds.
+################
+#Flagstatsam at 2024-07-03T07:02:51.287 was executed with the following commandline:
+/bin/sh -c samtools flagstat /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT.sam > /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT.sam.stats 
+################
+#/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+# Runtime of Module was: 0 seconds.
+################
+#CircularMapperRealignerdefault at 2024-07-03T07:02:51.331 was executed with the following commandline:
+realignsamfile -e 500 -i /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT.sam -r /data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna 
+################
+#/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+Picked up _JAVA_OPTIONS: -Dsun.java2d.xrender=false -Xmx256G -Xms8G
+DEBUG	2024-07-03 07:02:52	BlockCompressedOutputStream	Using deflater: Deflater
+# Runtime of Module was: 1 seconds.
+################
+#Flagstatdefault at 2024-07-03T07:02:52.645 was executed with the following commandline:
+/bin/sh -c samtools flagstat /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.bam > /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.bam.stats 
+################
+#/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+# Runtime of Module was: 0 seconds.
+################
+#SamtoolsViewOnlyMapped at 2024-07-03T07:02:52.693 was executed with the following commandline:
+samtools view -@ 4 -F4 -b /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.bam -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.bam 
+################
+## Runtime of Module was: 0 seconds.
+################
+#SamtoolsSortUnfiltered at 2024-07-03T07:02:52.901 was executed with the following commandline:
+samtools sort -@ 4 -m 8G /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.bam -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.bam 
+################
+#[bam_sort_core] merging from 0 files and 4 in-memory blocks...
+# Runtime of Module was: 0 seconds.
+################
+#SamtoolsIndexUnfiltered at 2024-07-03T07:02:53.044 was executed with the following commandline:
+samtools index /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.bam 
+################
+## Runtime of Module was: 0 seconds.
+################
+#SamtoolsViewfiltered at 2024-07-03T07:02:53.12 was executed with the following commandline:
+samtools view -@ 4 -q 30 -b /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.bam -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.bam 
+################
+## Runtime of Module was: 0 seconds.
+################
+#Flagstatfiltered at 2024-07-03T07:02:53.256 was executed with the following commandline:
+/bin/sh -c samtools flagstat /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.bam > /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.bam.qF.stats 
+################
+#/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+# Runtime of Module was: 0 seconds.
+################
+#SamtoolsSortdefault at 2024-07-03T07:02:53.284 was executed with the following commandline:
+samtools sort -@ 4 -m 8G /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.bam -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.bam 
+################
+#[bam_sort_core] merging from 0 files and 4 in-memory blocks...
+# Runtime of Module was: 0 seconds.
+################
+#SamtoolsIndexdefault at 2024-07-03T07:02:53.455 was executed with the following commandline:
+samtools index /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.bam 
+################
+## Runtime of Module was: 0 seconds.
+################
+#CleanSam at 2024-07-03T07:02:53.522 was executed with the following commandline:
+picard CleanSam INPUT=/data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.bam OUTPUT=/data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned.bam VALIDATION_STRINGENCY=SILENT 
+################
+#/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+Picked up _JAVA_OPTIONS: -Dsun.java2d.xrender=false -Xmx256G -Xms8G
+[Wed Jul 03 07:02:54 UTC 2024] picard.sam.CleanSam INPUT=/data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.bam OUTPUT=/data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned.bam VALIDATION_STRINGENCY=SILENT    VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Wed Jul 03 07:02:54 UTC 2024] Executing as haeusler@thor on Linux 5.15.0-112-generic amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_144-b01; Picard version: 2.9.2-SNAPSHOT
+[Wed Jul 03 07:02:54 UTC 2024] picard.sam.CleanSam done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=8232370176
+# Runtime of Module was: 0 seconds.
+################
+#DeDup at 2024-07-03T07:02:54.507 was executed with the following commandline:
+dedup -i /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned.bam -m -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup 
+################
+#/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+Picked up JAVA_TOOL_OPTIONS: -Djava.io.tmpdir=/data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/.tmp
+Picked up _JAVA_OPTIONS: -Dsun.java2d.xrender=false -Xmx256G -Xms8G
+DeDup v0.12.1
+# Runtime of Module was: 1 seconds.
+################
+#SamtoolsSortDeDup at 2024-07-03T07:02:55.938 was executed with the following commandline:
+samtools sort -@ 4 -m 8G /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.bam -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam 
+################
+#[bam_sort_core] merging from 0 files and 4 in-memory blocks...
+# Runtime of Module was: 0 seconds.
+################
+#SamtoolsIndexDedup at 2024-07-03T07:02:56.079 was executed with the following commandline:
+samtools index /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam 
+################
+## Runtime of Module was: 0 seconds.
+################
+#QualiMapDefault at 2024-07-03T07:02:56.179 was executed with the following commandline:
+qualimap bamqc -bam /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam -nt 4 -outdir /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/6-QualiMap/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted -outformat HTML --java-mem-size=32G 
+################
+#/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=1024m; support was removed in 8.0
+Picked up _JAVA_OPTIONS: -Dsun.java2d.xrender=false -Xmx256G -Xms8G
+# Runtime of Module was: 3 seconds.
+################
+#DamageProfiler at 2024-07-03T07:02:59.237 was executed with the following commandline:
+damageprofiler -i /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam -r /data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna -l 100 -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/7-DnaDamage/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted -t 25  
+################
+#/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+Picked up _JAVA_OPTIONS: -Dsun.java2d.xrender=false -Xmx256G -Xms8G
+# Runtime of Module was: 2 seconds.
+# EAGER Version used for this run: 1.92.56
+################
+#GATKRealignerTargetCreator at 2024-07-03T07:03:01.289 was executed with the following commandline:
+gatk -T RealignerTargetCreator -R /data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna -I /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam -nt 4 -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.intervals 
+################
+#/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+Picked up JAVA_TOOL_OPTIONS: -Djava.io.tmpdir=/data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/.tmp
+Picked up _JAVA_OPTIONS: -Dsun.java2d.xrender=false -Xmx256G -Xms8G
+INFO  07:03:03,691 HelpFormatter - ---------------------------------------------------------------------------------- 
+INFO  07:03:03,692 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.8-0-ge9d806836, Compiled 2017/07/28 21:26:50 
+INFO  07:03:03,692 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  07:03:03,693 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  07:03:03,693 HelpFormatter - [Wed Jul 03 07:03:03 UTC 2024] Executing on Linux 5.15.0-112-generic amd64 
+INFO  07:03:03,693 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_144-b01 
+INFO  07:03:03,696 HelpFormatter - Program Args: -T RealignerTargetCreator -R /data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna -I /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam -nt 4 -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.intervals 
+INFO  07:03:03,698 HelpFormatter - Executing as haeusler@thor on Linux 5.15.0-112-generic amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_144-b01. 
+INFO  07:03:03,699 HelpFormatter - Date/Time: 2024/07/03 07:03:03 
+INFO  07:03:03,699 HelpFormatter - ---------------------------------------------------------------------------------- 
+INFO  07:03:03,699 HelpFormatter - ---------------------------------------------------------------------------------- 
+ERROR StatusLogger Unable to create class org.apache.logging.log4j.core.impl.Log4jContextFactory specified in jar:file:/opt/gatk/GenomeAnalysisTK.jar!/META-INF/log4j-provider.properties
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+INFO  07:03:03,813 GenomeAnalysisEngine - Deflater: IntelDeflater 
+INFO  07:03:03,813 GenomeAnalysisEngine - Inflater: IntelInflater 
+INFO  07:03:03,814 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  07:03:03,897 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 1000 
+INFO  07:03:03,903 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  07:03:03,920 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.02 
+INFO  07:03:03,938 MicroScheduler - Running the GATK in parallel mode with 4 total threads, 1 CPU thread(s) for each of 4 data thread(s), of 64 processors available on this machine 
+INFO  07:03:03,989 GenomeAnalysisEngine - Preparing for traversal over 1 BAM files 
+INFO  07:03:04,001 GenomeAnalysisEngine - Done preparing for traversal 
+INFO  07:03:04,001 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  07:03:04,002 ProgressMeter -                 | processed |    time |    per 1M |           |   total | remaining 
+INFO  07:03:04,002 ProgressMeter -        Location |     sites | elapsed |     sites | completed | runtime |   runtime 
+INFO  07:03:04,006 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  07:03:04,010 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.00 
+INFO  07:03:04,490 ProgressMeter -            done     16660.0     0.0 s      29.0 s       99.5%     0.0 s       0.0 s 
+INFO  07:03:04,490 ProgressMeter - Total runtime 0.49 secs, 0.01 min, 0.00 hours 
+INFO  07:03:04,495 MicroScheduler - 0 reads were filtered out during the traversal out of approximately 15559 total reads (0.00%) 
+INFO  07:03:04,495 MicroScheduler -   -> 0 reads (0.00% of total) failing BadCigarFilter 
+INFO  07:03:04,496 MicroScheduler -   -> 0 reads (0.00% of total) failing BadMateFilter 
+INFO  07:03:04,496 MicroScheduler -   -> 0 reads (0.00% of total) failing DuplicateReadFilter 
+INFO  07:03:04,496 MicroScheduler -   -> 0 reads (0.00% of total) failing FailsVendorQualityCheckFilter 
+INFO  07:03:04,497 MicroScheduler -   -> 0 reads (0.00% of total) failing MalformedReadFilter 
+INFO  07:03:04,497 MicroScheduler -   -> 0 reads (0.00% of total) failing MappingQualityUnavailableFilter 
+INFO  07:03:04,497 MicroScheduler -   -> 0 reads (0.00% of total) failing MappingQualityZeroFilter 
+INFO  07:03:04,498 MicroScheduler -   -> 0 reads (0.00% of total) failing NotPrimaryAlignmentFilter 
+INFO  07:03:04,498 MicroScheduler -   -> 0 reads (0.00% of total) failing Platform454Filter 
+INFO  07:03:04,498 MicroScheduler -   -> 0 reads (0.00% of total) failing UnmappedReadFilter 
+------------------------------------------------------------------------------------------
+Done. ------------------------------------------------------------------------------------------
+# Runtime of Module was: 3 seconds.
+################
+#GATKIndelRealigner at 2024-07-03T07:03:04.656 was executed with the following commandline:
+gatk -T IndelRealigner -R /data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna -I /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam -targetIntervals /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.intervals -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.real.bam 
+################
+#/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+Picked up JAVA_TOOL_OPTIONS: -Djava.io.tmpdir=/data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/.tmp
+Picked up _JAVA_OPTIONS: -Dsun.java2d.xrender=false -Xmx256G -Xms8G
+INFO  07:03:07,140 HelpFormatter - ---------------------------------------------------------------------------------- 
+INFO  07:03:07,142 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.8-0-ge9d806836, Compiled 2017/07/28 21:26:50 
+INFO  07:03:07,142 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  07:03:07,143 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  07:03:07,143 HelpFormatter - [Wed Jul 03 07:03:07 UTC 2024] Executing on Linux 5.15.0-112-generic amd64 
+INFO  07:03:07,143 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_144-b01 
+INFO  07:03:07,146 HelpFormatter - Program Args: -T IndelRealigner -R /data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna -I /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam -targetIntervals /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.intervals -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.real.bam 
+INFO  07:03:07,148 HelpFormatter - Executing as haeusler@thor on Linux 5.15.0-112-generic amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_144-b01. 
+INFO  07:03:07,148 HelpFormatter - Date/Time: 2024/07/03 07:03:07 
+INFO  07:03:07,149 HelpFormatter - ---------------------------------------------------------------------------------- 
+INFO  07:03:07,149 HelpFormatter - ---------------------------------------------------------------------------------- 
+ERROR StatusLogger Unable to create class org.apache.logging.log4j.core.impl.Log4jContextFactory specified in jar:file:/opt/gatk/GenomeAnalysisTK.jar!/META-INF/log4j-provider.properties
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+INFO  07:03:07,329 GenomeAnalysisEngine - Deflater: IntelDeflater 
+INFO  07:03:07,330 GenomeAnalysisEngine - Inflater: IntelInflater 
+INFO  07:03:07,330 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  07:03:07,391 GenomeAnalysisEngine - Downsampling Settings: No downsampling 
+INFO  07:03:07,397 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  07:03:07,416 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.02 
+INFO  07:03:07,486 GenomeAnalysisEngine - Preparing for traversal over 1 BAM files 
+INFO  07:03:07,489 GenomeAnalysisEngine - Done preparing for traversal 
+INFO  07:03:07,490 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  07:03:07,490 ProgressMeter -                 | processed |    time |    per 1M |           |   total | remaining 
+INFO  07:03:07,490 ProgressMeter -        Location |     reads | elapsed |     reads | completed | runtime |   runtime 
+INFO  07:03:07,498 ReadShardBalancer$1 - Loading BAM index data 
+INFO  07:03:07,499 ReadShardBalancer$1 - Done loading BAM index data 
+INFO  07:03:07,997 ProgressMeter -            done     15546.0     0.0 s      32.0 s       99.6%     0.0 s       0.0 s 
+INFO  07:03:07,997 ProgressMeter - Total runtime 0.51 secs, 0.01 min, 0.00 hours 
+INFO  07:03:08,001 MicroScheduler - 0 reads were filtered out during the traversal out of approximately 15546 total reads (0.00%) 
+INFO  07:03:08,001 MicroScheduler -   -> 0 reads (0.00% of total) failing BadCigarFilter 
+INFO  07:03:08,001 MicroScheduler -   -> 0 reads (0.00% of total) failing MalformedReadFilter 
+------------------------------------------------------------------------------------------
+Done. ------------------------------------------------------------------------------------------
+# Runtime of Module was: 3 seconds.
+################
+#GATKUnifiedGenotyperEMIT ALL POSITIONS, NO DBSNP at 2024-07-03T07:03:08.125 was executed with the following commandline:
+gatk -T UnifiedGenotyper -R /data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna -I /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.real.bam -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/10-GATKGenotyper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.real.unifiedgenotyper.vcf -nt 4 -stand_call_conf 30 --sample_ploidy 2 -dcov 250 --output_mode EMIT_ALL_SITES  
+################
+#/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+Picked up JAVA_TOOL_OPTIONS: -Djava.io.tmpdir=/data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/10-GATKGenotyper/.tmp
+Picked up _JAVA_OPTIONS: -Dsun.java2d.xrender=false -Xmx256G -Xms8G
+INFO  07:03:10,431 HelpFormatter - ---------------------------------------------------------------------------------- 
+INFO  07:03:10,432 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.8-0-ge9d806836, Compiled 2017/07/28 21:26:50 
+INFO  07:03:10,433 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  07:03:10,433 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  07:03:10,433 HelpFormatter - [Wed Jul 03 07:03:10 UTC 2024] Executing on Linux 5.15.0-112-generic amd64 
+INFO  07:03:10,433 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_144-b01 
+INFO  07:03:10,436 HelpFormatter - Program Args: -T UnifiedGenotyper -R /data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna -I /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.real.bam -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/10-GATKGenotyper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.real.unifiedgenotyper.vcf -nt 4 -stand_call_conf 30 --sample_ploidy 2 -dcov 250 --output_mode EMIT_ALL_SITES 
+INFO  07:03:10,438 HelpFormatter - Executing as haeusler@thor on Linux 5.15.0-112-generic amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_144-b01. 
+INFO  07:03:10,439 HelpFormatter - Date/Time: 2024/07/03 07:03:10 
+INFO  07:03:10,439 HelpFormatter - ---------------------------------------------------------------------------------- 
+INFO  07:03:10,439 HelpFormatter - ---------------------------------------------------------------------------------- 
+ERROR StatusLogger Unable to create class org.apache.logging.log4j.core.impl.Log4jContextFactory specified in jar:file:/opt/gatk/GenomeAnalysisTK.jar!/META-INF/log4j-provider.properties
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+INFO  07:03:10,566 GenomeAnalysisEngine - Deflater: IntelDeflater 
+INFO  07:03:10,566 GenomeAnalysisEngine - Inflater: IntelInflater 
+INFO  07:03:10,567 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  07:03:10,653 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 250 
+INFO  07:03:10,658 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  07:03:10,676 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.02 
+INFO  07:03:10,693 MicroScheduler - Running the GATK in parallel mode with 4 total threads, 1 CPU thread(s) for each of 4 data thread(s), of 64 processors available on this machine 
+INFO  07:03:10,747 GenomeAnalysisEngine - Preparing for traversal over 1 BAM files 
+INFO  07:03:10,758 GenomeAnalysisEngine - Done preparing for traversal 
+INFO  07:03:10,759 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  07:03:10,759 ProgressMeter -                 | processed |    time |    per 1M |           |   total | remaining 
+INFO  07:03:10,759 ProgressMeter -        Location |     sites | elapsed |     sites | completed | runtime |   runtime 
+INFO  07:03:10,797 StrandBiasTest - SAM/BAM data was found. Attempting to use read data to calculate strand bias annotations values. 
+WARN  07:03:10,797 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. 
+INFO  07:03:10,797 StrandBiasTest - SAM/BAM data was found. Attempting to use read data to calculate strand bias annotations values. 
+INFO  07:03:10,845 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  07:03:10,849 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.00 
+INFO  07:03:14,145 ProgressMeter -            done     16660.0     3.0 s       3.4 m       99.5%     3.0 s       0.0 s 
+INFO  07:03:14,146 ProgressMeter - Total runtime 3.39 secs, 0.06 min, 0.00 hours 
+INFO  07:03:14,146 MicroScheduler - 0 reads were filtered out during the traversal out of approximately 15559 total reads (0.00%) 
+INFO  07:03:14,146 MicroScheduler -   -> 0 reads (0.00% of total) failing BadCigarFilter 
+INFO  07:03:14,147 MicroScheduler -   -> 0 reads (0.00% of total) failing BadMateFilter 
+INFO  07:03:14,147 MicroScheduler -   -> 0 reads (0.00% of total) failing DuplicateReadFilter 
+INFO  07:03:14,147 MicroScheduler -   -> 0 reads (0.00% of total) failing FailsVendorQualityCheckFilter 
+INFO  07:03:14,147 MicroScheduler -   -> 0 reads (0.00% of total) failing MalformedReadFilter 
+INFO  07:03:14,148 MicroScheduler -   -> 0 reads (0.00% of total) failing MappingQualityUnavailableFilter 
+INFO  07:03:14,148 MicroScheduler -   -> 0 reads (0.00% of total) failing NotPrimaryAlignmentFilter 
+INFO  07:03:14,148 MicroScheduler -   -> 0 reads (0.00% of total) failing UnmappedReadFilter 
+------------------------------------------------------------------------------------------
+Done. ------------------------------------------------------------------------------------------
+# Runtime of Module was: 6 seconds.
+################
+#BGZip at 2024-07-03T07:03:14.327 was executed with the following commandline:
+bgzip -f /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/10-GATKGenotyper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.real.unifiedgenotyper.vcf 
+################
+## Runtime of Module was: 0 seconds.
+################
+#Tabix at 2024-07-03T07:03:14.44 was executed with the following commandline:
+tabix -p vcf /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/10-GATKGenotyper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.real.unifiedgenotyper.vcf.gz 
+################
+## Runtime of Module was: 0 seconds.
+################
+#CleanUpRedundantData at 2024-07-03T07:03:14.486 was executed with the following commandline:
+/bin/sh -c rm /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/*.sam; rm /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/*.sai; rm /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.bam ; rm /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.bam ; rm /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.bam ; rm /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.bam.bai; rm /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.bam;  
+################
+#/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+# Runtime of Module was: 0 seconds.
+################
+#ReportGenerator at 2024-07-03T07:03:14.515 was executed with the following commandline:
+ReportTable /data/simulation_AncientReads_HQ439467/02-EAGERmapping/Report_02-EAGERmapping.csv /data/simulation_AncientReads_HQ439467/02-EAGERmapping 
+################
+#/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+Picked up _JAVA_OPTIONS: -Dsun.java2d.xrender=false -Xmx256G -Xms8G
+# Runtime of Module was: 0 seconds.
+# EAGER Version used for this run: 1.92.56
+################
+#CreateResultsDirectories at 2024-07-03T07:28:34.961 was executed with the following commandline:
+mkdir -p /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/0-FastQC/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/1-AdapClip/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/6-QualiMap/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/7-DnaDamage/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/.tmp /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/10-GATKGenotyper/.tmp 
+################
+## Runtime of Module was: 0 seconds.
+################
+#FastQCdefault at 2024-07-03T07:28:34.964 was executed with the following commandline:
+fastqc -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/0-FastQC --extract  -f fastq /data/simulation_AncientReads_HQ439467/01-gargammel/ANCIENT.SIM.CONT.RUN-4_s.fq.gz 
+################
+## The Module FastQCdefault has already been run! (i.e the command above was NOT executed)################
+#AdapterRemovalsingleendedonly at 2024-07-03T07:28:34.964 was executed with the following commandline:
+AdapterRemoval --file1 /data/simulation_AncientReads_HQ439467/01-gargammel/ANCIENT.SIM.CONT.RUN-4_s.fq.gz --basename /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/1-AdapClip/ANCIENT.SIM.CONT.RUN-4_s.fq --gzip --threads 4 --trimns --trimqualities --adapter1 AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC --adapter2 AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA --minlength 30 --minquality 20 --minadapteroverlap 1 
+################
+## The Module AdapterRemovalsingleendedonly has already been run! (i.e the command above was NOT executed)################
+#TrackFastQ at 2024-07-03T07:28:34.965 was executed with the following commandline:
+/bin/sh -c echo 'all' > /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/1-AdapClip//track_fastq.log 
+################
+## The Module TrackFastQ has already been run! (i.e the command above was NOT executed)# EAGER Version used for this run: 1.92.56
+################
+#CircularMapperGenerator at 2024-07-03T07:28:34.965 was executed with the following commandline:
+circulargenerator -e 500 -i /data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna -s NC_001640.1 
+################
+## The Module CircularMapperGenerator has already been run! (i.e the command above was NOT executed)################
+#BWAAlign at 2024-07-03T07:28:34.966 was executed with the following commandline:
+bwa aln -t 4 /data/references/NC_001640_Equus-callabus_mt/NC_001640.1_500.fna /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/1-AdapClip/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.gz -n 0.01 -l 16500  -f /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT.sai 
+################
+## The Module BWAAlign has already been run! (i.e the command above was NOT executed)################
+#BWASamse at 2024-07-03T07:28:34.967 was executed with the following commandline:
+bwa samse -r @RG\tID:ILLUMINA-ANCIENT.SIM.CONT.RUN-4_s.fq\tSM:ANCIENT.SIM.CONT.RUN-4_s.fq\tPL:illumina /data/references/NC_001640_Equus-callabus_mt/NC_001640.1_500.fna /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT.sai /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/1-AdapClip/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.gz -f /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT.sam 
+################
+## The Module BWASamse has already been run! (i.e the command above was NOT executed)################
+#Flagstatsam at 2024-07-03T07:28:34.967 was executed with the following commandline:
+/bin/sh -c samtools flagstat /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT.sam > /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT.sam.stats 
+################
+## The Module Flagstatsam has already been run! (i.e the command above was NOT executed)################
+#CircularMapperRealignerdefault at 2024-07-03T07:28:34.968 was executed with the following commandline:
+realignsamfile -e 500 -i /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT.sam -r /data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna 
+################
+## The Module CircularMapperRealignerdefault has already been run! (i.e the command above was NOT executed)################
+#Flagstatdefault at 2024-07-03T07:28:34.968 was executed with the following commandline:
+/bin/sh -c samtools flagstat /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.bam > /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.bam.stats 
+################
+## The Module Flagstatdefault has already been run! (i.e the command above was NOT executed)################
+#SamtoolsViewOnlyMapped at 2024-07-03T07:28:34.968 was executed with the following commandline:
+samtools view -@ 4 -F4 -b /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/3-Mapper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.bam -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.bam 
+################
+## The Module SamtoolsViewOnlyMapped has already been run! (i.e the command above was NOT executed)################
+#SamtoolsSortUnfiltered at 2024-07-03T07:28:34.969 was executed with the following commandline:
+samtools sort -@ 4 -m 8G /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.bam -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.bam 
+################
+## The Module SamtoolsSortUnfiltered has already been run! (i.e the command above was NOT executed)################
+#SamtoolsIndexUnfiltered at 2024-07-03T07:28:34.969 was executed with the following commandline:
+samtools index /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.bam 
+################
+## The Module SamtoolsIndexUnfiltered has already been run! (i.e the command above was NOT executed)################
+#SamtoolsViewfiltered at 2024-07-03T07:28:34.97 was executed with the following commandline:
+samtools view -@ 4 -q 30 -b /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.bam -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.bam 
+################
+## The Module SamtoolsViewfiltered has already been run! (i.e the command above was NOT executed)################
+#Flagstatfiltered at 2024-07-03T07:28:34.971 was executed with the following commandline:
+/bin/sh -c samtools flagstat /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.bam > /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.bam.qF.stats 
+################
+## The Module Flagstatfiltered has already been run! (i.e the command above was NOT executed)################
+#SamtoolsSortdefault at 2024-07-03T07:28:34.971 was executed with the following commandline:
+samtools sort -@ 4 -m 8G /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.bam -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.bam 
+################
+## The Module SamtoolsSortdefault has already been run! (i.e the command above was NOT executed)################
+#SamtoolsIndexdefault at 2024-07-03T07:28:34.971 was executed with the following commandline:
+samtools index /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.bam 
+################
+## The Module SamtoolsIndexdefault has already been run! (i.e the command above was NOT executed)################
+#CleanSam at 2024-07-03T07:28:34.972 was executed with the following commandline:
+picard CleanSam INPUT=/data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/4-Samtools/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.bam OUTPUT=/data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned.bam VALIDATION_STRINGENCY=SILENT 
+################
+## The Module CleanSam has already been run! (i.e the command above was NOT executed)################
+#DeDup at 2024-07-03T07:28:34.972 was executed with the following commandline:
+dedup -i /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned.bam -m -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup 
+################
+## The Module DeDup has already been run! (i.e the command above was NOT executed)################
+#SamtoolsSortDeDup at 2024-07-03T07:28:34.973 was executed with the following commandline:
+samtools sort -@ 4 -m 8G /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.bam -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam 
+################
+## The Module SamtoolsSortDeDup has already been run! (i.e the command above was NOT executed)################
+#SamtoolsIndexDedup at 2024-07-03T07:28:34.973 was executed with the following commandline:
+samtools index /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam 
+################
+## The Module SamtoolsIndexDedup has already been run! (i.e the command above was NOT executed)################
+#QualiMapDefault at 2024-07-03T07:28:34.974 was executed with the following commandline:
+qualimap bamqc -bam /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam -nt 4 -outdir /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/6-QualiMap/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted -outformat HTML --java-mem-size=32G 
+################
+## The Module QualiMapDefault has already been run! (i.e the command above was NOT executed)################
+#DamageProfiler at 2024-07-03T07:28:34.974 was executed with the following commandline:
+damageprofiler -i /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam -r /data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna -l 100 -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/7-DnaDamage/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted -t 25  
+################
+## The Module DamageProfiler has already been run! (i.e the command above was NOT executed)# EAGER Version used for this run: 1.92.56
+################
+#GATKRealignerTargetCreator at 2024-07-03T07:28:34.974 was executed with the following commandline:
+gatk -T RealignerTargetCreator -R /data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna -I /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam -nt 4 -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.intervals 
+################
+## The Module GATKRealignerTargetCreator has already been run! (i.e the command above was NOT executed)################
+#GATKIndelRealigner at 2024-07-03T07:28:34.975 was executed with the following commandline:
+gatk -T IndelRealigner -R /data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna -I /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/5-DeDup/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam -targetIntervals /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.intervals -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.real.bam 
+################
+## The Module GATKIndelRealigner has already been run! (i.e the command above was NOT executed)################
+#GATKUnifiedGenotyperEMIT ALL POSITIONS, NO DBSNP at 2024-07-03T07:28:34.975 was executed with the following commandline:
+gatk -T UnifiedGenotyper -R /data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna -I /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/9-GATKBasics/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.real.bam -o /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/10-GATKGenotyper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.real.unifiedgenotyper.vcf -nt 4 -stand_call_conf 30 --sample_ploidy 2 -dcov 250 --output_mode EMIT_ALL_SITES  
+################
+## The Module GATKUnifiedGenotyperEMIT ALL POSITIONS, NO DBSNP has already been run! (i.e the command above was NOT executed)################
+#BGZip at 2024-07-03T07:28:34.976 was executed with the following commandline:
+bgzip -f /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/10-GATKGenotyper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.real.unifiedgenotyper.vcf 
+################
+#[bgzip] No such file or directory: /data/simulation_AncientReads_HQ439467/02-EAGERmapping/ANCIENT.SIM.CONT.RUN-4/10-GATKGenotyper/ANCIENT.SIM.CONT.RUN-4_s.fq.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.real.unifiedgenotyper.vcf
+# The Module BGZip failed in execution at 2024-07-03T07:28:34.978. Check what happened in the logfile.
