@@ -5,7 +5,7 @@ This repository contains the scripts and data to evaluate DORIAN, a tool for dam
 ```
 |
 |- 01-simulation_AncientReads_HQ439467:         Scripts and data created in the simulation run
-|– 02-analysis_SimulatedAncientReads_HQ439467:  Results of EAGER analysis of simulated data
+|– 02-analysis_SimulatedAncientReads_HQ439467:  Results of EAGER analysis of simulated data needed for downstream analysis
 |– 03-DORIAN_evaluation:    Scripts and data created for correction and evaluation
 |– data:                    Horse template genome for simulation
 |– references:              NCBI reference genomes used for evaluation
