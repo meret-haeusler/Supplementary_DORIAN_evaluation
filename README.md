@@ -88,7 +88,7 @@ Two evaluation metrics were used; first, the positions that were considered for 
     a) Call == GT  & UN != GT –> Improved call
     b) Call == 'N' & UN != GT –> Semi-conservative call (better 'N' than incorrect)
     c) Call == 'N' & UN == GT –> Too conservative call
-    d) Call != GT  & UN == GT –> Incorrect call
+    d) Call != GT  & UN != GT & Call != 'N' & UN != 'N' –> Incorrect call
     ````
 3) Note that if there is no entry for a position in the RBS, then the base call is the same as the uncorrected call.
 
