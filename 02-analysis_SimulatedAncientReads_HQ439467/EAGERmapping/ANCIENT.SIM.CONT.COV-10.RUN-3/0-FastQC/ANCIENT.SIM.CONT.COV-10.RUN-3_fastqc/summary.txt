@@ -1,0 +1,11 @@
+PASS	Basic Statistics	ANCIENT.SIM.CONT.COV-10.RUN-3.fq
+PASS	Per base sequence quality	ANCIENT.SIM.CONT.COV-10.RUN-3.fq
+PASS	Per sequence quality scores	ANCIENT.SIM.CONT.COV-10.RUN-3.fq
+FAIL	Per base sequence content	ANCIENT.SIM.CONT.COV-10.RUN-3.fq
+PASS	Per sequence GC content	ANCIENT.SIM.CONT.COV-10.RUN-3.fq
+PASS	Per base N content	ANCIENT.SIM.CONT.COV-10.RUN-3.fq
+WARN	Sequence Length Distribution	ANCIENT.SIM.CONT.COV-10.RUN-3.fq
+PASS	Sequence Duplication Levels	ANCIENT.SIM.CONT.COV-10.RUN-3.fq
+PASS	Overrepresented sequences	ANCIENT.SIM.CONT.COV-10.RUN-3.fq
+PASS	Adapter Content	ANCIENT.SIM.CONT.COV-10.RUN-3.fq
+FAIL	Kmer Content	ANCIENT.SIM.CONT.COV-10.RUN-3.fq

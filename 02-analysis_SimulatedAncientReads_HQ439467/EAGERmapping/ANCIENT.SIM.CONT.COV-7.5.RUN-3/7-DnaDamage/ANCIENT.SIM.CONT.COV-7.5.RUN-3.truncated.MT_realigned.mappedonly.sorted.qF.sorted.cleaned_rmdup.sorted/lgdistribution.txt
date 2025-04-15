@@ -1,0 +1,44 @@
+# table produced by calculations.DamageProfiler
+# using mapped file /data/analysis_SimulatedAncientReads_HQ439467/01-EAGERmapping/ANCIENT.SIM.CONT.COV-7.5.RUN-3/5-DeDup/ANCIENT.SIM.CONT.COV-7.5.RUN-3.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam
+# Std: strand of reads
+Std	Length	Occurrences
++	30	289
++	31	196
++	32	182
++	33	136
++	34	108
++	35	79
++	36	79
++	37	46
++	38	53
++	39	22
++	40	30
++	41	13
++	42	21
++	43	18
++	44	12
++	45	14
++	46	10
++	47	4
++	48	6
++	49	2
+-	30	365
+-	31	317
+-	32	306
+-	33	238
+-	34	190
+-	35	163
+-	36	155
+-	37	108
+-	38	89
+-	39	79
+-	40	53
+-	41	46
+-	42	52
+-	43	48
+-	44	45
+-	45	30
+-	46	23
+-	47	21
+-	48	14
+-	49	13

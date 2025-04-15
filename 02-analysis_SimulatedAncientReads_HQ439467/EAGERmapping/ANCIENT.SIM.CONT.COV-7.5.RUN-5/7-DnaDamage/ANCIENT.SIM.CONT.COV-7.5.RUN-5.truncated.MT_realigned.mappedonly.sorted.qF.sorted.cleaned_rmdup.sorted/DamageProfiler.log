@@ -1,0 +1,52 @@
+2024-07-03 08:44:49 INFO  StartCalculations:49 - DamageProfiler v0.3.9
+2024-07-03 08:44:49 INFO  StartCalculations:61 - Analysis of file :/data/analysis_SimulatedAncientReads_HQ439467/01-EAGERmapping/ANCIENT.SIM.CONT.COV-7.5.RUN-5/5-DeDup/ANCIENT.SIM.CONT.COV-7.5.RUN-5.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted.bam
+Output folder :/data/analysis_SimulatedAncientReads_HQ439467/01-EAGERmapping/ANCIENT.SIM.CONT.COV-7.5.RUN-5/7-DnaDamage/ANCIENT.SIM.CONT.COV-7.5.RUN-5.truncated.MT_realigned.mappedonly.sorted.qF.sorted.cleaned_rmdup.sorted
+Reference (optional) :/data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna
+Reference (optional) :/data/references/NC_001640_Equus-callabus_mt/NC_001640.1.fna
+Specie (optional):null
+Length: 100
+Threshold: 25
+Height yaxis: 0.0
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 100 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 200 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 300 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 400 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 500 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 600 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 700 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 800 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 900 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 1000 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 1100 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 1200 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 1300 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 1400 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 1500 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 1600 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 1700 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 1800 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 1900 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 2000 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 2100 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 2200 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 2300 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 2400 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 2500 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 2600 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 2700 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 2800 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 2900 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 3000 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 3100 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 3200 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 3300 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 3400 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 3500 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:110 - 3600 Reads processed.
+2024-07-03 08:44:49 INFO  StartCalculations:952 - Values normalized ....
+2024-07-03 08:44:49 INFO  StartCalculations:141 - -------------------
+2024-07-03 08:44:49 INFO  StartCalculations:142 - # Skipped records (Deletion): 0
+2024-07-03 08:44:49 INFO  StartCalculations:143 - # Skipped records (length does not match): 0
+2024-07-03 08:44:49 INFO  StartCalculations:144 - # reads used for damage calculation: 3666
+2024-07-03 08:44:50 INFO  StartCalculations:137 - Output files generated
+2024-07-03 08:44:50 INFO  StartCalculations:149 - Runtime of Module was: 1 seconds.
