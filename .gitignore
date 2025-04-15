@@ -17,6 +17,10 @@
 **/DONE.*
 **/Report_**.txt
 
+04-NumberOfSimulatedDamagedPositions/ANCIENT.SIM.COV-*.RUN-*.adapters.fq
+04-NumberOfSimulatedDamagedPositions/tmp/ANCIENT.SIM.CONT.COV-*.RUN-*.adapters.fq
+
+
 # User-specific files
 .Rhistory
 .DS_Store
