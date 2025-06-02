@@ -103,4 +103,4 @@ Two evaluation metrics were used; first, the positions that were considered for 
 
 ## Contact
 > Author: Meret Häusler \
-> Contact: ```meret.haeusler@uni-tuebingen.de```
+> Contact: ```meret[dot]haeusler[at]uni-tuebingen[dot]de```
