@@ -39,7 +39,7 @@ tab[["COR_MODE"]] = factor(tab[["COR_MODE"]], levels = c("RGS", "RFS", "RFW"), l
 tab <- subset(tab, select = -c(RUN, X.DAMPOS_UNION, X.DAMPOS_SPEC, X.POS_COR_CHANGED))
 
 # Normalise data and remove column not needed for downstream analysis
-tab_norm <- tab %>% mutate(across(c(3:6), .fns = ~./X.POS_SIM_DAM))
+tab_norm <- tab %>% mutate(across(c(3:6), .fns = ~(./X.POS_SIM_DAM)*100))
 tab_norm <- subset(tab_norm, select = -c(X.POS_SIM_DAM))
 
 
@@ -71,10 +71,10 @@ colours <- c("#005493", "#38B4CF", "#CAE8F5")
 # Improved
 plot_imp <-
 ggbarplot(tab_norm, x = "COV", y = "Impr",                            #Add data
-          add = "mean_sd",                                            #Calculate average and draw SD error bars
+          add = c("mean", "point"),                                   #Calculate average and draw underlying data points
           fill = "COR_MODE", palette = colours,                       #Fill bar by correction mode
           position = position_dodge(0.8)) +                           #Define distance between bars
-  labs(x="", y="Base Calls [in %]") +                                 #Define y-axis title
+  labs(x="", y="Base Calls [%]") +                                 #Define y-axis title
   ggtitle(label = "A) Improved base calls", subtitle = "") +          #Define plot title and subtitle
   theme_bw() +
   theme(legend.position = "none", legend.title = element_blank()) +   #Remove legend from plot
@@ -86,10 +86,10 @@ test.simpr <- test.simpr %>% add_xy_position(x = "COV", fun = "mean_sd", dodge =
 
 plot_simp <-
 ggbarplot(tab_norm, x = "COV", y = "SImpr",                           #Add data
-          add = "mean_sd",                                            #Calculate average and draw SD error bars
+          add = c("mean", "point"),                                   #Calculate average and draw underlying data points
           fill = "COR_MODE", palette = colours,                       #Fill bar by correction mode
           position = position_dodge(0.8)) +                           #Define distance between bars
-  labs(x="", y="Base Calls [in %]") +                                 #Define y-axis title
+  labs(x="", y="Base Calls [%]") +                                 #Define y-axis title
   ggtitle(label = "B) Semi-conservative base calls",                  #Define plot title
           subtitle = "N-calls vs. incorrect") +                       #Define plot subtitle
   theme_bw() +
@@ -107,11 +107,11 @@ test.swors <- test.swors %>% add_xy_position(x = "COV", fun = "mean_sd", dodge =
 
 plot_swors <-
 ggbarplot(tab_norm, x = "COV", y = "SWors",                           #Add data
-          add = "mean_sd",                                            #Calculate average and draw SD error bars
+          add = c("mean", "point"),                                   #Calculate average and draw underlying data points
           fill = "COR_MODE", palette = colours,                       #Fill bar by correction mode
           position = position_dodge(0.8)) +                           #Define distance between bars
-  labs(x="", y="Base Calls [in %]") +                                 #Define y-axis title
-  ggtitle(label = "C) Too conservative base calls",                   # Define plot title
+  labs(x="", y="Base Calls [%]") +                                 #Define y-axis title
+  ggtitle(label = "C) Too conservative base calls",                   #Define plot title
           subtitle = "N-calls vs. correct") +                         #Define plot subtitle
   theme_bw() +
   theme(legend.position = "none", legend.title = element_blank(),     #Remove legend from plot
@@ -126,10 +126,10 @@ test.wors <- test.wors %>% add_xy_position(x = "COV", fun = "mean_sd", dodge = 0
 
 plot_wors <-
 ggbarplot(tab_norm, x = "COV", y = "Wors",                            #Add data
-          add = "mean_sd",                                            #Calculate average and draw SD error bars
+          add = c("mean", "point"),                                   #Calculate average and draw underlying data points
           fill = "COR_MODE", palette = colours,                       #Fill bar by correction mode
           position = position_dodge(0.8)) +                           #Define distance between bars
-  labs(x="", y="Base Calls [in %]") +                                 #Define y-axis title
+  labs(x="", y="Base Calls [%]") +                                 #Define y-axis title
   ggtitle(label = "D) Incorrect base calls", subtitle = "") +         #Define plot title and subtitle
   theme_bw() +
   theme(legend.position = "none", legend.title = element_blank(),     #Remove legend from plot
@@ -151,8 +151,8 @@ dat_Ns <- separate(dat_Ns, COV_COND, into = c("COV", "RUN"), sep = "(?<=[0-9]).R
 # Factorise data
 dat_Ns[["COR_MODE"]] <- factor(dat_Ns[["COR_MODE"]], 
                                levels = c("no_correction", "ref-based_silencing", "ref-free_silencing", "ref-free_weighting"),
-                               labels = c("no_correction", "Polarization-based Damage Silencing", 
-                                          "Polarization-free Damage Silencing", "Polarization-free Damage Weighting"))
+                               labels = c("no_correction", "Polarization-Based Damage Silencing", 
+                                          "Polarization-Free Damage Silencing", "Polarization-Free Damage Weighting"))
 dat_Ns[["COV"]] <- factor(dat_Ns[["COV"]], levels = c("COV-10", "COV-7.5", "COV-5"), labels = c("10X", "7.5X", "5X"))
 dat_Ns[["RUN"]] <- factor(dat_Ns[["RUN"]], levels = c(1,2,3,4,5))
 
@@ -178,10 +178,10 @@ test.rel_diff <- test.rel_diff %>% add_xy_position(x = "COV", fun = "mean_sd", d
 
 plot_N <-
   ggbarplot(dat_rel_diff, x = "COV", y = "diff",                        #Add data
-            add = "mean_sd",                                            #Calculate average and draw SD error bars
+            add = c("mean", "point"),                                   #Calculate average and underlying datapoints
             fill = "COR_MODE", palette = colours,                       #Fill bar by correction mode
             position = position_dodge(0.8)) +                           #Define distance between bars
-  labs(x="", y="Difference [in %]") +                                   #Define y-axis title
+  labs(x="", y="Difference [%]") +                                   #Define y-axis title
   ggtitle(label = "E) Relative Difference",                             #Define plot title
           subtitle = "Non-informative Base Calls") +                    #Define plot subtitle
   theme_bw() +
@@ -202,5 +202,5 @@ plot_imp + plot_simp + guide_area() + plot_swors + plot_wors + plot_N +
   theme(legend.title = element_blank())
 
 
-ggsave("plot_SupplementsComparison.png", plot_grid,
-       width = 37.3, height = 18.6, units = "cm")
+ggsave("SFigure2_Evaluation.pdf", plot_grid,
+       device = "pdf", width = 37.3, height = 18.6, units = "cm")
