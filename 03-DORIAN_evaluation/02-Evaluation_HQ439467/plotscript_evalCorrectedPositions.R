@@ -74,7 +74,7 @@ ggbarplot(tab_norm, x = "COV", y = "Impr",                            #Add data
           add = c("mean", "point"),                                   #Calculate average and draw underlying data points
           fill = "COR_MODE", palette = colours,                       #Fill bar by correction mode
           position = position_dodge(0.8)) +                           #Define distance between bars
-  labs(x="", y="Base Calls [%]") +                                 #Define y-axis title
+  labs(x="Coverage", y="Base Calls [%]") +                            #Define y-axis title
   ggtitle(label = "A) Improved base calls", subtitle = "") +          #Define plot title and subtitle
   theme_bw() +
   theme(legend.position = "none", legend.title = element_blank()) +   #Remove legend from plot
@@ -89,7 +89,7 @@ ggbarplot(tab_norm, x = "COV", y = "SImpr",                           #Add data
           add = c("mean", "point"),                                   #Calculate average and draw underlying data points
           fill = "COR_MODE", palette = colours,                       #Fill bar by correction mode
           position = position_dodge(0.8)) +                           #Define distance between bars
-  labs(x="", y="Base Calls [%]") +                                 #Define y-axis title
+  labs(x="Coverage", y="Base Calls [%]") +                                 #Define y-axis title
   ggtitle(label = "B) Semi-conservative base calls",                  #Define plot title
           subtitle = "N-calls vs. incorrect") +                       #Define plot subtitle
   theme_bw() +
@@ -110,7 +110,7 @@ ggbarplot(tab_norm, x = "COV", y = "SWors",                           #Add data
           add = c("mean", "point"),                                   #Calculate average and draw underlying data points
           fill = "COR_MODE", palette = colours,                       #Fill bar by correction mode
           position = position_dodge(0.8)) +                           #Define distance between bars
-  labs(x="", y="Base Calls [%]") +                                 #Define y-axis title
+  labs(x="Coverage", y="Base Calls [%]") +                                 #Define y-axis title
   ggtitle(label = "C) Too conservative base calls",                   #Define plot title
           subtitle = "N-calls vs. correct") +                         #Define plot subtitle
   theme_bw() +
@@ -129,7 +129,7 @@ ggbarplot(tab_norm, x = "COV", y = "Wors",                            #Add data
           add = c("mean", "point"),                                   #Calculate average and draw underlying data points
           fill = "COR_MODE", palette = colours,                       #Fill bar by correction mode
           position = position_dodge(0.8)) +                           #Define distance between bars
-  labs(x="", y="Base Calls [%]") +                                 #Define y-axis title
+  labs(x="Coverage", y="Base Calls [%]") +                                 #Define y-axis title
   ggtitle(label = "D) Incorrect base calls", subtitle = "") +         #Define plot title and subtitle
   theme_bw() +
   theme(legend.position = "none", legend.title = element_blank(),     #Remove legend from plot
@@ -181,7 +181,7 @@ plot_N <-
             add = c("mean", "point"),                                   #Calculate average and underlying datapoints
             fill = "COR_MODE", palette = colours,                       #Fill bar by correction mode
             position = position_dodge(0.8)) +                           #Define distance between bars
-  labs(x="", y="Difference [%]") +                                   #Define y-axis title
+  labs(x="Coverage", y="Difference [%]") +                                   #Define y-axis title
   ggtitle(label = "E) Relative Difference",                             #Define plot title
           subtitle = "Non-informative Base Calls") +                    #Define plot subtitle
   theme_bw() +
